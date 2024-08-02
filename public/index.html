@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demande de Formation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Soumettre une Demande de Formation</h1>
+    <form id="demande-formation-form">
+        <label for="employee-name">Nom de l'employé:</label>
+        <select id="employee-name" name="employee-name">
+            <option value="employee1">Employee 1</option>
+            <option value="employee2">Employee 2</option>
+            <!-- Ajouter d'autres options selon la liste prédéterminée -->
+        </select>
+
+        <label for="manager-name">Nom du gestionnaire:</label>
+        <input type="text" id="manager-name" name="manager-name" value="Chantal Bergevin" readonly>
+
+        <label for="course-provider">Fournisseur du cours:</label>
+        <input type="text" id="course-provider" name="course-provider" placeholder="ex: Udemy.com">
+
+        <label for="course-code">Code du cours:</label>
+        <input type="text" id="course-code" name="course-code">
+
+        <label for="course-title">Titre du cours:</label>
+        <input type="text" id="course-title" name="course-title">
+
+        <label for="registration-deadline">Date limite d'inscription:</label>
+        <input type="date" id="registration-deadline" name="registration-deadline">
+
+        <label for="category">Catégorie:</label>
+        <select id="category" name="category">
+            <option value="gestion-projet">Gestion de projet</option>
+            <option value="informatique">Informatique</option>
+            <option value="ressources-humaines">Gestion des ressources humaines</option>
+        </select>
+
+        <label for="learning-mode">Modalité pédagogique:</label>
+        <select id="learning-mode" name="learning-mode">
+            <option value="en-personne">En personne</option>
+            <option value="classe-virtuelle">Classe virtuelle</option>
+            <option value="apprentissage-a-son-rythme">Apprentissage à son rythme</option>
+        </select>
+
+        <label for="course-language">Langue du cours:</label>
+        <select id="course-language" name="course-language">
+            <option value="francais">Français</option>
+            <option value="anglais">Anglais</option>
+        </select>
+
+        <label for="course-duration">Durée du cours (heures):</label>
+        <input type="number" id="course-duration" name="course-duration">
+
+        <label for="course-fee">Frais du cours (CAD):</label>
+        <input type="number" id="course-fee" name="course-fee">
+
+        <label for="course-start-date">Date de début du cours:</label>
+        <input type="date" id="course-start-date" name="course-start-date">
+
+        <button type="submit">Soumettre</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
